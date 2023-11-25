@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+* {
+    font-family: 'Poppins', sans-serif ;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(1, 0, 22);
+}
+.container{
+    position: relative;
+    background-color: aliceblue;
+    max-width: 380px;
+    width: 100%;
+    padding: 25px;
+    border-radius: 28px;
+    box-shadow: 0 0 20px 5px rgba(88, 88, 88, 0.6);
+}
+.container::before{
+    content: "";
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    background-color: rgba(150, 206, 255, 0.5);
+    border-radius: 50%;
+    transform: translate(60px, -15px);
+    box-shadow: 0 0 25px rgba(2, 80, 148, 0.5);
+}
+header,
+.card-details{
+    position: relative;
+}
+header,
+.card-details{
+    z-index: 100;
+}
+header,
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+h5{
+    font-size: 16px;
+    font-weight: 460;
+}
+.logo h5{
+    margin-left: 8px;
+}
+.logo img{
+    width: 48px;
+}
+header .chip{
+    width: 50px;
+}
+.card-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 30px;
+}
+.name-number .name{
+    margin-top: 20px;
+}
+.name-number .number{
+    padding: 0;
+}
+h6{
+    font-size: 12px;
+    font-weight: 450;
+}
